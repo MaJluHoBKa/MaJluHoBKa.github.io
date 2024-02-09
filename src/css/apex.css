@@ -1,0 +1,31 @@
+.apex-add{
+    position: absolute;
+    left: 45%;
+    top: 45%;
+
+    border: 3px solid #d3d3d3;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+
+    color: #b4b4b4;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: monospace;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    word-break: break-all;
+    word-wrap: break-word;
+    display: flex;
+
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.apex-add:hover{
+    border-color: #ffee10;
+    box-shadow: 0 0 10px #ffee10;
+}
