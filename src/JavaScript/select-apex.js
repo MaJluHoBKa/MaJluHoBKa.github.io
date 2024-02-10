@@ -1,8 +1,16 @@
 selectedApex = [];
 let isSelectionEnabled = false;
+let Link = false;
 
 $(document).ready(function() {
     $('#button-link').on('click', function() {
+        Link = true;
+        isSelectionEnabled = true;
+        $('.apex-add').css("opacity", "0.5");
+    });
+
+    $('#button-swap').on('click', function() {
+        Link = false;
         isSelectionEnabled = true;
         $('.apex-add').css("opacity", "0.5");
     });
@@ -18,7 +26,12 @@ function selectElement(event, element) {
         }
 
         if (selectedApex.length === 2) {
-            handleSelection();
+            if(Link){
+                handleSelection();
+            }
+            else{
+                swapApex();
+            }
         }
     }
 }
@@ -46,6 +59,27 @@ function handleSelection() {
         line: line,
         linkApex: firstApex.id
     });
+
+    $('.apex-add').css("opacity", "1");
+    isSelectionEnabled = false;
+    selectedApex.length = 0;
+}
+function swapApex(){
+    var firstApex = $("#" + selectedApex[0].id);
+    var secondApex = $("#" + selectedApex[1].id);
+
+    var originalWidthFirstApex = firstApex.outerWidth();
+    var originalHeightFirstApex = firstApex.outerHeight();
+    var originalWidthSecondApex = secondApex.outerWidth();
+    var originalHeightSecondApex = secondApex.outerHeight();
+    
+    firstApex.css({"width": originalWidthSecondApex + "px", "height": originalHeightSecondApex + "px"});
+    secondApex.css({"width": originalWidthFirstApex + "px", "height": originalHeightFirstApex + "px"});
+
+    var textFirstApex = firstApex.find('span').first().text();
+    var textSecondApex = secondApex.find('span').first().text();
+    firstApex.find('span').first().text(textSecondApex);
+    secondApex.find('span').first().text(textFirstApex);
 
     $('.apex-add').css("opacity", "1");
     isSelectionEnabled = false;
