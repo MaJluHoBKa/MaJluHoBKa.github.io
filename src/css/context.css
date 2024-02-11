@@ -1,0 +1,193 @@
+.contextMenu{
+    z-index: 1000;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    box-shadow: 0px 0px 10px #3b3b3b;
+}
+.menuList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contextButton{
+    width: 100px;
+    height: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    border: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b3b3b;
+    transition: all 0.5s ease-out;
+}
+.contextButton a{
+    position: relative;
+    padding: 5px 5px;
+    transition: all .45s ease-Out;
+    color: #9fa5a4;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: monospace;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.tint-icon{
+    color: #30d5c8;
+}
+.arrow-icon{
+    transition: transform 0.5s ease;
+    color:#1D1D1D;
+}
+
+.contextButton:hover{
+    background-color: #30d5c8;
+    box-shadow: 0px 0px 10px #30d5c8;
+}
+.contextButton:hover a {
+    color: #1D1D1D;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: monospace;
+}
+.contextButton:hover .tint-icon {
+    color: #1D1D1D;
+}
+#colour{
+    border-radius: 5px 5px 5px 5px;
+}
+
+.subMenu{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    left: 105%;
+    top: 0;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    box-shadow: 0px 0px 10px #3b3b3b;
+}
+#redButton{
+    border-radius: 5px 5px 0 0;
+}
+#redButton:hover{
+    background-color: red;
+    box-shadow: 0px 0px 10px red;
+}
+#red-icon{
+    color: red;
+    transition: transform 0.5s ease;
+}
+#redButton:hover #red-icon{
+    color: black;
+}
+
+#pinkButton{
+    border-radius: 0 0 0 0;
+}
+#pinkButton:hover{
+    background-color: #ff00c8;
+    box-shadow: 0px 0px 10px #ff00c8;
+}
+#pink-icon{
+    color: #ff00c8;
+    transition: transform 0.5s ease;
+}
+#pinkButton:hover #pink-icon{
+    color: black;
+}
+
+#purpleButton{
+    border-radius: 0 0 0 0;
+}
+#purpleButton:hover{
+    background-color: #ae00ff;
+    box-shadow: 0px 0px 10px #ae00ff;
+}
+#purple-icon{
+    color: #ae00ff;
+    transition: transform 0.5s ease;
+}
+#purpleButton:hover #purple-icon{
+    color: black;
+}
+
+#blueButton{
+    border-radius: 0 0 0 0;
+}
+#blueButton:hover{
+    background-color: #1500ff;
+    box-shadow: 0px 0px 10px #1500ff;
+}
+#blue-icon{
+    color: #1500ff;
+    transition: transform 0.5s ease;
+}
+#blueButton:hover #blue-icon{
+    color: black;
+}
+
+#turquoiseButton{
+    border-radius: 0 0 0 0;
+}
+#turquoiseButton:hover{
+    background-color: #00ffe1;
+    box-shadow: 0px 0px 10px #00ffe1;
+}
+#turquoise-icon{
+    color: #00ffe1;
+    transition: transform 0.5s ease;
+}
+#turquoiseButton:hover #turquoise-icon{
+    color: black;
+}
+
+#greenButton{
+    border-radius: 0 0 0 0;
+}
+#greenButton:hover{
+    background-color: #00ff09;
+    box-shadow: 0px 0px 10px #00ff09;
+}
+#green-icon{
+    color: #00ff09;
+    transition: transform 0.5s ease;
+}
+#greenButton:hover #green-icon{
+    color: black;
+}
+
+#yellowButton{
+    border-radius: 0 0 0 0;
+}
+#yellowButton:hover{
+    background-color: #fbff00;
+    box-shadow: 0px 0px 10px #fbff00;
+}
+#yellow-icon{
+    color: #fbff00;
+    transition: transform 0.5s ease;
+}
+#yellowButton:hover #yellow-icon{
+    color: black;
+}
+
+#orangeButton{
+    border-radius: 0 0 5px 5px;
+}
+#orangeButton:hover{
+    background-color: #ff7b00;
+    box-shadow: 0px 0px 10px #ff7b00;
+}
+#orange-icon{
+    color: #ff7b00;
+    transition: transform 0.5s ease;
+}
+#orangeButton:hover #orange-icon{
+    color: black;
+}

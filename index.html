@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/src/css/main.css">
     <link rel="stylesheet" href="/src/css/apex.css">
     <link rel="stylesheet" href="/src/css/button.css">
+    <link rel="stylesheet" href="/src/css/context.css">
     <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/overcast/jquery-ui.css" />
 
@@ -19,6 +20,7 @@
     <script src="/src/JavaScript/scripts.js"></script>
     <script src="/src/JavaScript/leader-line.js"></script>
     <script src="/src/JavaScript/select-apex.js"></script>
+    <script src="/src/JavaScript/context-menu.js"></script>
 </head>
 
 <body>
@@ -63,6 +65,63 @@
         <div id="circle-control"></div>
         <i class="eye-icon fa fa-eye fa-2x" id="eye"></i>
     </button>
+
+
+    <div class = "contextMenu">
+        <ul class="menuList">
+            <li class="itemMenu">
+                <button class="contextButton" id="colour">
+                    <i class="tint-icon fa fa-tint"></i>
+                    <a href="#">COLOR</a>
+                    <i class="arrow-icon fa fa-caret-right"></i>
+                </button>
+
+                <ul class="subMenu">
+                    <li class="itemMenu">
+                        <button class="contextButton" id="redButton">
+                            <i class="tint-icon fa fa-tint" id="red-icon"></i>
+                        </button>
+                    </li>
+                    <li class="itemMenu">
+                        <button class="contextButton" id="pinkButton">
+                            <i class="tint-icon fa fa-tint" id="pink-icon"></i>
+                        </button>
+                    </li>
+                    <li class="itemMenu">
+                        <button class="contextButton" id="purpleButton">
+                            <i class="tint-icon fa fa-tint" id="purple-icon"></i>
+                        </button>
+                    </li>
+                    <li class="itemMenu">
+                        <button class="contextButton" id="blueButton">
+                            <i class="tint-icon fa fa-tint" id="blue-icon"></i>
+                        </button>
+                    </li>
+                    <li class="itemMenu">
+                        <button class="contextButton" id="turquoiseButton">
+                            <i class="tint-icon fa fa-tint" id="turquoise-icon"></i>
+                        </button>
+                    </li>
+                    <li class="itemMenu">
+                        <button class="contextButton" id="greenButton">
+                            <i class="tint-icon fa fa-tint" id="green-icon"></i>
+                        </button>
+                    </li>
+                    <li class="itemMenu">
+                        <button class="contextButton" id="yellowButton">
+                            <i class="tint-icon fa fa-tint" id="yellow-icon"></i>
+                        </button>
+                    </li>
+                    <li class="itemMenu">
+                        <button class="contextButton" id="orangeButton">
+                            <i class="tint-icon fa fa-tint" id="orange-icon"></i>
+                        </button>
+                    </li>
+                </ul>
+                
+            </li>
+        </ul>
+    </div>
  
 </body>
 
