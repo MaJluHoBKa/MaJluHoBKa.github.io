@@ -1,6 +1,6 @@
 .contextMenu{
     z-index: 1000;
-    display: flex;
+    display: none;
     position: absolute;
     flex-direction: column;
     border-radius: 5px;

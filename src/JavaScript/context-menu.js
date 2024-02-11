@@ -1,7 +1,7 @@
 $(document).ready(function() {
     let isColour = false;
     let divId;
-    
+
     $(document).on("contextmenu", ".apex-add", function(event) {
         event.preventDefault();
         divId = $(this).attr('id');
@@ -119,7 +119,7 @@ $(document).ready(function() {
       );
     });
 
-    $("greenButton").on('click', function(){
+    $("#greenButton").on('click', function(){
       $("#" + divId).css({
         "border": "3px solid #00ff09"
       })
@@ -133,7 +133,7 @@ $(document).ready(function() {
       );
     });
 
-    $("yellowButton").on('click', function(){
+    $("#yellowButton").on('click', function(){
       $("#" + divId).css({
         "border": "3px solid #fbff00"
       })
@@ -147,7 +147,7 @@ $(document).ready(function() {
       );
     });
 
-    $("orangeButton").on('click', function(){
+    $("#orangeButton").on('click', function(){
       $("#" + divId).css({
         "border": "3px solid #ff7b00"
       })
