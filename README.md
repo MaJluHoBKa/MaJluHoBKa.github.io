@@ -1,1 +1,1 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&duration=2000&pause=500&center=true&vCenter=true&multiline=true&random=false&width=550&lines=Web+Application;Interactive+Visualization+of+Data+Structures)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&duration=2000&pause=500&center=true&vCenter=true&multiline=true&random=false&width=550&height=100&lines=Web+Application;Interactive+Visualization+of+Data+Structures)](https://git.io/typing-svg)
