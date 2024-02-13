@@ -71,12 +71,11 @@
         <ul class="menuList">
             <li class="itemMenu">
                 <button class="contextButton" id="colour">
-                    <i class="tint-icon fa fa-tint"></i>
+                    <i class="tint-icon-menu fa fa-tint"></i>
                     <a href="#">COLOR</a>
-                    <i class="arrow-icon fa fa-caret-right"></i>
+                    <i class="arrow-icon fa fa-caret-right" id="colourIcon"></i>
                 </button>
-
-                <ul class="subMenu">
+                <ul class="subMenu" id="colourMenu">
                     <li class="itemMenu">
                         <button class="contextButton" id="redButton">
                             <i class="tint-icon fa fa-tint" id="red-icon"></i>
@@ -118,7 +117,84 @@
                         </button>
                     </li>
                 </ul>
-                
+            </li>
+            <li class="itemMenu">
+                <button class="contextButton" id="edit">
+                    <i class="edit-icon fa fa-edit"></i>
+                    <a href="#">EDIT</a> 
+                </button>
+                <ul class="subMenu-edit">
+                    <li class="itemMenu-edit">
+                        <textarea id="input-edit" rows="4" cols="50"></textarea>
+                    </li>
+                    <ul class="edit-button">
+                        <li class="itemMenu-edit">
+                            <button class="contextButton" id="OK-edit">
+                                <a href="#">OK</a>
+                            </button>
+                        </li>
+                        <li class="itemMenu-edit">
+                            <button class="contextButton" id="CANCEL-edit">
+                                <a href="#">CANCEL</a>
+                            </button>
+                        </li>
+                    </ul>
+                </ul>
+            </li>
+            <li class="itemMenu">
+                <button class="contextButton" id="add-node">
+                    <i class="plus-icon fa fa-plus-square"></i>
+                    <a href="#">NODE</a>
+                    <i class="arrow-icon fa fa-caret-right" id="figureIcon"></i>
+                </button>
+                <ul class="subMenu" id="figureMenu">
+                    <li class="itemMenu">
+                        <button class="contextButton" id="square">
+                            <i class="tint-icon fa fa-square" id="square-icon"></i>
+                        </button>
+                    </li>
+                    <li class="itemMenu">
+                        <button class="contextButton" id="circ">
+                            <i class="tint-icon fa fa-circle" id="circle-icon"></i>
+                        </button>
+                    </li>
+                    <li class="itemMenu">
+                        <button class="contextButton" id="triangle">
+                            <i class="tint-icon fa fa-play" id="triangle-icon-up"></i>
+                        </button>
+                    </li>
+                    <li class="itemMenu">
+                        <button class="contextButton" id="triangle">
+                            <i class="tint-icon fa fa-play" id="triangle-icon-down"></i>
+                        </button>
+                    </li>
+                    <li class="itemMenu">
+                        <button class="contextButton" id="turquoiseButton">
+                            <i class="tint-icon fa fa-tint" id="turquoise-icon"></i>
+                        </button>
+                    </li>
+                    <li class="itemMenu">
+                        <button class="contextButton" id="greenButton">
+                            <i class="tint-icon fa fa-tint" id="green-icon"></i>
+                        </button>
+                    </li>
+                    <li class="itemMenu">
+                        <button class="contextButton" id="yellowButton">
+                            <i class="tint-icon fa fa-tint" id="yellow-icon"></i>
+                        </button>
+                    </li>
+                    <li class="itemMenu">
+                        <button class="contextButton" id="orangeButton">
+                            <i class="tint-icon fa fa-tint" id="orange-icon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </li>
+            <li class="itemMenu">
+                <button class="contextButton" id="add-field">
+                    <i class="plus-icon fa fa-plus-square"></i>
+                    <a href="#">FIELD</a>
+                </button>
             </li>
         </ul>
     </div>

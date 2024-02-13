@@ -1,5 +1,5 @@
+var ID = 1;
 $(document).ready(function() {
-    var ID = 1;
     let isHide = false;
     $('#button-add').on('click', function() {
         AddApex();
@@ -64,7 +64,7 @@ $(document).ready(function() {
             .attr('id', ID)
             .css({
                 'position': 'absolute',
-                'z-index': '4'
+                'z-index': '900'
             })
             .on('mousedown', function(event) {
                 selectElement(event, this);
